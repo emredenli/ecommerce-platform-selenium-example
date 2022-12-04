@@ -1,0 +1,41 @@
+Created by emredenli on 26.11.2022
+
+This is a concept file with following syntax for each concept.
+# Vatan Computer - Anasayfanın açıldığı onaylanır
+* "div[class='homepage-slider']" - "cssSelector" elementinin görünür olması kontrol edilir
+
+# Vatan Computer - SearchBox'a 'Samsung' değeri yazılır ve ürün aratılır
+* "navbar-search-input" - "id" elementinin görünür olması kontrol edilir
+* "navbar-search-input" - "id" elementine "Samsung" değerini yaz
+* "span[class='icon-search']" - "cssSelector" elementinin görünür olması kontrol edilir
+* "span[class='icon-search']" - "cssSelector" elementine tıklanır
+
+# Vatan Computer - Sayfada 'Samsung' için sonuç bulunduğu onaylanır
+* "//h3[contains(text(), 'SAMSUNG')]" - "xpath" elementinin görünür olması kontrol edilir
+
+# Vatan Computer - Arama sonuçlarında 2. sayfaya geçilir
+* "(//a[@class='pagination__content'])[2]" - "xpath" elementine scroll yapılır
+* "(//a[@class='pagination__content'])[2]" - "xpath" elementinin görünür olması kontrol edilir
+* "(//a[@class='pagination__content'])[2]" - "xpath" elementine tıklanır
+
+# Vatan Computer - Açılan sayfada 2. sayfanın şuan gösterimde olduğu onaylanır
+* "//li[@class='pagination__item active']//a[@class='pagination__content' and text()='2']" - "xpath" elementinin görünür olması kontrol edilir
+
+# Vatan Computer - Üstten <productNumber>. ürüne gidilerek içerisindeki favorilere ekle butonuna tıklanır
+* "#productsLoad div[class='product-list product-list--list-page'] div[class='product-list__image-safe']" - "cssSelector" elementinin görünür olması kontrol edilir
+* "#productsLoad div[class='product-list product-list--list-page'] div[class='product-list__image-safe']" - "cssSelector" listedeki <productNumber>. ürünü seç
+* "fav_Icon" - "id" elementinin görünür olması kontrol edilir
+* "fav_Icon" - "id" elementine tıklanır
+
+# Vatan Computer - Favorilerim linkine gidilir ve ilgili ürünün favorilere alınmış olduğu onaylanır
+* "div[class='fancy-modal-price-footer'] a[class='btn btn-default btn-modal pull-right']" - "cssSelector" elementinin görünür olması kontrol edilir
+* "div[class='fancy-modal-price-footer'] a[class='btn btn-default btn-modal pull-right']" - "cssSelector" elementine tıklanır
+* "div[class='basket-cart__table-row']" - "cssSelector" elementinin görünür olması kontrol edilir
+
+# Vatan Computer - Seçilen ürünün kodu ile favorilere eklenen ürün kodunun eşit olduğu kontrol edilir ve onaylanır
+* "div[class='product-list__product-code pull-left product-id']" - "cssSelector" seçilen ürünün code değeri ile "span[class='product-code']" - "cssSelector" favorilerdeki ürünün code değerini karşılaştır
+
+# Vatan Computer - Favorilerimden kaldır butonuna basarak favorilerden kalktığı onaylanır
+* "a[class='basket-cart__product-remove'] i" - "cssSelector" elementinin görünür olması kontrol edilir
+* "a[class='basket-cart__product-remove'] i" - "cssSelector" elementine tıklanır
+* "div[class='basket-cart__table-row']" - "cssSelector" elementinin sayfada görünür olmadığı kontrol edilir

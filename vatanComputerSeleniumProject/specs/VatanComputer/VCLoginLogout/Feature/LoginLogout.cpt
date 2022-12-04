@@ -1,0 +1,25 @@
+Created by emredenli on 26.11.2022
+
+This is a concept file with following syntax for each concept.
+# Vatan Computer Login
+* "btnMyAccount" - "id" elementinin görünür olması kontrol edilir
+* "btnMyAccount" - "id" elementine tıklanır
+* "//a[text()='Giriş Yap']" - "xpath" elementinin görünür olması kontrol edilir
+* "//a[text()='Giriş Yap']" - "xpath" elementine tıklanır
+* "email" - "id" elementinin görünür olması kontrol edilir
+* "email" - "id" elementine "ta3320594@gmail.com" değerini yaz
+* "pass" - "id" elementinin görünür olması kontrol edilir
+* "pass" - "id" elementine "tstccnt123" değerini yaz
+* "button[id='login-button']" - "cssSelector" elementinin görünür olması kontrol edilir
+* "button[id='login-button']" - "cssSelector" elementine tıklanır
+
+# Vatan Computer Logout
+* "btnMyAccount" - "id" elementine tıklanır
+* "span[class='icon-door-open']" - "cssSelector" elementinin görünür olması kontrol edilir
+* "span[class='icon-door-open']" - "cssSelector" elementine tıklanır
+* "//span[text()='GİRİŞ YAP']" - "xpath" elementinin görünür olması kontrol edilir
+
+
+
+
+

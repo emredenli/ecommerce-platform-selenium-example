@@ -1,0 +1,1 @@
+var index = {"Tags":{},"Specs":{"VC - Vatan Computer":["specs/VatanComputer/VC/EpicVatanComputer.html"]}};

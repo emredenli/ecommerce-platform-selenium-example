@@ -1,0 +1,28 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+log4j:WARN No appenders could be found for logger (io.grpc.netty.shaded.io.netty.util.internal.logging.InternalLoggerFactory).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+SLF4J: A number (18) of logging calls during the initialization phase have been intercepted and are
+SLF4J: now being replayed. These are subject to the filtering rules of the underlying logging system.
+SLF4J: See also http://www.slf4j.org/codes.html#replay
+{"logLevel":"debug","message":"gauge-java took 1762milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 1762"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 56131"}
+{"logLevel":"info","message":"Listening on port:56131"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'step.StepImplementation.checkElementVisible' and 'step.StepImplementation.checkElementVisible'"}
+{"logLevel":"debug","message":"Found {} - {} elementinin görünür olması kontrol edilir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'step.StepImplementation.clickElement' and 'step.StepImplementation.clickElement'"}
+{"logLevel":"debug","message":"Found {} - {} elementine tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'step.StepImplementation.waitElement' and 'step.StepImplementation.waitElement'"}
+{"logLevel":"debug","message":"Found {} saniye bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'step.StepImplementation.sendKeysElement' and 'step.StepImplementation.sendKeysElement'"}
+{"logLevel":"debug","message":"Found {} - {} elementine {} değerini yaz in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\t{} saniye bekle : public void waitElement(long seconds) throws InterruptedException"}
+{"logLevel":"debug","message":"\t{} - {} elementine tıkla : public void clickElement(String key, String keyType)"}
+{"logLevel":"debug","message":"\t{} - {} elementine {} değerini yaz : public void sendKeysElement(String key, String keyType, String text)"}
+{"logLevel":"debug","message":"\t{} - {} elementinin görünür olması kontrol edilir : public void checkElementVisible(String key, String keyType)"}

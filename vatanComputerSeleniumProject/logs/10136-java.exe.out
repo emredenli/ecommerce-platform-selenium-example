@@ -1,0 +1,129 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+log4j:WARN No appenders could be found for logger (io.grpc.netty.shaded.io.netty.util.internal.CleanerJava6).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+SLF4J: A number (16) of logging calls during the initialization phase have been intercepted and are
+SLF4J: now being replayed. These are subject to the filtering rules of the underlying logging system.
+SLF4J: See also http://www.slf4j.org/codes.html#replay
+{"logLevel":"debug","message":"gauge-java took 2658milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 2658"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 56342"}
+{"logLevel":"info","message":"Listening on port:56342"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'step.StepImplementation.productCodeControl' and 'step.StepImplementation.productCodeControl'"}
+{"logLevel":"debug","message":"Found {} - {} seçilen ürünün code değeri ile {} - {} favorilerdeki ürünün code değerini karşılaştır in current project scope."}
+{"logLevel":"debug","message":"Comparing 'step.StepImplementation.checkElementVisible' and 'step.StepImplementation.checkElementVisible'"}
+{"logLevel":"debug","message":"Found {} - {} elementinin sayfada görünür olmadığı kontrol edilir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'step.StepImplementation.clickElement' and 'step.StepImplementation.clickElement'"}
+{"logLevel":"debug","message":"Found {} - {} elementine tıklanır in current project scope."}
+{"logLevel":"debug","message":"Comparing 'step.StepImplementation.checkVisibleElement' and 'step.StepImplementation.checkVisibleElement'"}
+{"logLevel":"debug","message":"Found {} - {} elementinin görünür olması kontrol edilir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'step.StepImplementation.scrollElement' and 'step.StepImplementation.scrollElement'"}
+{"logLevel":"debug","message":"Found {} - {} elementine scroll yapılır in current project scope."}
+{"logLevel":"debug","message":"Comparing 'step.StepImplementation.waitElement' and 'step.StepImplementation.waitElement'"}
+{"logLevel":"debug","message":"Found {} saniye bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'step.StepImplementation.whichElementClick' and 'step.StepImplementation.whichElementClick'"}
+{"logLevel":"debug","message":"Found {} - {} listedeki {}. ürünü seç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'step.StepImplementation.sendKeysElement' and 'step.StepImplementation.sendKeysElement'"}
+{"logLevel":"debug","message":"Found {} - {} elementine {} değerini yaz in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\t{} - {} elementine scroll yapılır : public void scrollElement(String key, String keyType) throws InterruptedException"}
+{"logLevel":"debug","message":"\t{} - {} elementinin sayfada görünür olmadığı kontrol edilir : public void checkElementVisible(String key, String keyType)"}
+{"logLevel":"debug","message":"\t{} saniye bekle : public void waitElement(long seconds) throws InterruptedException"}
+{"logLevel":"debug","message":"\t{} - {} seçilen ürünün code değeri ile {} - {} favorilerdeki ürünün code değerini karşılaştır : public void productCodeControl(String key, String keyType, String key2, String keyType2)"}
+{"logLevel":"debug","message":"\t{} - {} elementine tıklanır : public void clickElement(String key, String keyType)"}
+{"logLevel":"debug","message":"\t{} - {} elementine {} değerini yaz : public void sendKeysElement(String key, String keyType, String text)"}
+{"logLevel":"debug","message":"\t{} - {} listedeki {}. ürünü seç : public void whichElementClick(String key, String keyType, ınt whichElement)"}
+{"logLevel":"debug","message":"\t{} - {} elementinin görünür olması kontrol edilir : public void checkVisibleElement(String key, String keyType)"}
+=========================================================================================================================================
+------------------------------------------------------VatanComputerAutomationTest--------------------------------------------------------
+=========================================================================================================================================
+Ara 04, 2022 8:50:59 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 35770
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Ara 04, 2022 8:51:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+{"logLevel":"debug","message":"Executing '{} - {} elementinin görünür olması kontrol edilir' using 'class step.StepImplementation.checkVisibleElement"}
+( div[class='homepage-slider'] ) elementi sayfada goruntulendi
+{"logLevel":"debug","message":"Executing '{} - {} elementinin görünür olması kontrol edilir' using 'class step.StepImplementation.checkVisibleElement"}
+( btnMyAccount ) elementi sayfada goruntulendi
+{"logLevel":"debug","message":"Executing '{} - {} elementine tıklanır' using 'class step.StepImplementation.clickElement"}
+( btnMyAccount ) elementine tiklandi
+{"logLevel":"debug","message":"Executing '{} - {} elementinin görünür olması kontrol edilir' using 'class step.StepImplementation.checkVisibleElement"}
+( //a[text()='Giriş Yap'] ) elementi sayfada goruntulendi
+{"logLevel":"debug","message":"Executing '{} - {} elementine tıklanır' using 'class step.StepImplementation.clickElement"}
+( //a[text()='Giriş Yap'] ) elementine tiklandi
+{"logLevel":"debug","message":"Executing '{} - {} elementinin görünür olması kontrol edilir' using 'class step.StepImplementation.checkVisibleElement"}
+( email ) elementi sayfada goruntulendi
+{"logLevel":"debug","message":"Executing '{} - {} elementine {} değerini yaz' using 'class step.StepImplementation.sendKeysElement"}
+( email ) elementi sayfada goruntulendi ve ( ta3320594@gmail.com ) degeri yazildi
+{"logLevel":"debug","message":"Executing '{} - {} elementinin görünür olması kontrol edilir' using 'class step.StepImplementation.checkVisibleElement"}
+( pass ) elementi sayfada goruntulendi
+{"logLevel":"debug","message":"Executing '{} - {} elementine {} değerini yaz' using 'class step.StepImplementation.sendKeysElement"}
+( pass ) elementi sayfada goruntulendi ve ( tstccnt123 ) degeri yazildi
+{"logLevel":"debug","message":"Executing '{} - {} elementinin görünür olması kontrol edilir' using 'class step.StepImplementation.checkVisibleElement"}
+( button[id='login-button'] ) elementi sayfada goruntulendi
+{"logLevel":"debug","message":"Executing '{} - {} elementine tıklanır' using 'class step.StepImplementation.clickElement"}
+( button[id='login-button'] ) elementine tiklandi
+{"logLevel":"debug","message":"Executing '{} - {} elementinin görünür olması kontrol edilir' using 'class step.StepImplementation.checkVisibleElement"}
+( navbar-search-input ) elementi sayfada goruntulendi
+{"logLevel":"debug","message":"Executing '{} - {} elementine {} değerini yaz' using 'class step.StepImplementation.sendKeysElement"}
+( navbar-search-input ) elementi sayfada goruntulendi ve ( Samsung ) degeri yazildi
+{"logLevel":"debug","message":"Executing '{} - {} elementinin görünür olması kontrol edilir' using 'class step.StepImplementation.checkVisibleElement"}
+( span[class='icon-search'] ) elementi sayfada goruntulendi
+{"logLevel":"debug","message":"Executing '{} - {} elementine tıklanır' using 'class step.StepImplementation.clickElement"}
+( span[class='icon-search'] ) elementine tiklandi
+{"logLevel":"debug","message":"Executing '{} - {} elementinin görünür olması kontrol edilir' using 'class step.StepImplementation.checkVisibleElement"}
+( //h3[contains(text(), 'SAMSUNG')] ) elementi sayfada goruntulendi
+{"logLevel":"debug","message":"Executing '{} - {} elementine scroll yapılır' using 'class step.StepImplementation.scrollElement"}
+( (//a[@class='pagination__content'])[2] elementine scroll yapildi 
+{"logLevel":"debug","message":"Executing '{} - {} elementinin görünür olması kontrol edilir' using 'class step.StepImplementation.checkVisibleElement"}
+( (//a[@class='pagination__content'])[2] ) elementi sayfada goruntulendi
+{"logLevel":"debug","message":"Executing '{} - {} elementine tıklanır' using 'class step.StepImplementation.clickElement"}
+( (//a[@class='pagination__content'])[2] ) elementine tiklandi
+{"logLevel":"debug","message":"Executing '{} - {} elementinin görünür olması kontrol edilir' using 'class step.StepImplementation.checkVisibleElement"}
+( //li[@class='pagination__item active']//a[@class='pagination__content' and text()='2'] ) elementi sayfada goruntulendi
+{"logLevel":"debug","message":"Executing '{} - {} elementinin görünür olması kontrol edilir' using 'class step.StepImplementation.checkVisibleElement"}
+( #productsLoad div[class='product-list product-list--list-page'] div[class='product-list__image-safe'] ) elementi sayfada goruntulendi
+{"logLevel":"debug","message":"Executing '{} - {} listedeki {}. ürünü seç' using 'class step.StepImplementation.whichElementClick"}
+( #productsLoad div[class='product-list product-list--list-page'] div[class='product-list__image-safe'] ) elementi sayfada ( 16 ) adet element goruntulendi. ( 3 ). elemente tiklandi
+{"logLevel":"debug","message":"Executing '{} - {} elementinin görünür olması kontrol edilir' using 'class step.StepImplementation.checkVisibleElement"}
+( fav_Icon ) elementi sayfada goruntulendi
+{"logLevel":"debug","message":"Executing '{} - {} elementine tıklanır' using 'class step.StepImplementation.clickElement"}
+( fav_Icon ) elementine tiklandi
+{"logLevel":"debug","message":"Executing '{} - {} elementinin görünür olması kontrol edilir' using 'class step.StepImplementation.checkVisibleElement"}
+( div[class='fancy-modal-price-footer'] a[class='btn btn-default btn-modal pull-right'] ) elementi sayfada goruntulendi
+{"logLevel":"debug","message":"Executing '{} - {} elementine tıklanır' using 'class step.StepImplementation.clickElement"}
+( div[class='fancy-modal-price-footer'] a[class='btn btn-default btn-modal pull-right'] ) elementine tiklandi
+{"logLevel":"debug","message":"Executing '{} - {} elementinin görünür olması kontrol edilir' using 'class step.StepImplementation.checkVisibleElement"}
+( div[class='basket-cart__table-row'] ) elementi sayfada goruntulendi
+{"logLevel":"debug","message":"Executing '{} - {} seçilen ürünün code değeri ile {} - {} favorilerdeki ürünün code değerini karşılaştır' using 'class step.StepImplementation.productCodeControl"}
+( SM-S908EZWDTUR ) secilen urunun code degeri ile ( SM-S908EZWDTUR ) favorilerdeki urunun code degeri esit
+{"logLevel":"debug","message":"Executing '{} - {} elementinin görünür olması kontrol edilir' using 'class step.StepImplementation.checkVisibleElement"}
+( a[class='basket-cart__product-remove'] i ) elementi sayfada goruntulendi
+{"logLevel":"debug","message":"Executing '{} - {} elementine tıklanır' using 'class step.StepImplementation.clickElement"}
+( a[class='basket-cart__product-remove'] i ) elementine tiklandi
+{"logLevel":"debug","message":"Executing '{} - {} elementinin sayfada görünür olmadığı kontrol edilir' using 'class step.StepImplementation.checkElementVisible"}
+( div[class='basket-cart__table-row']) elementinin sayfada gorunur olmadigi onaylandi 
+{"logLevel":"debug","message":"Executing '{} - {} elementine tıklanır' using 'class step.StepImplementation.clickElement"}
+( btnMyAccount ) elementine tiklandi
+{"logLevel":"debug","message":"Executing '{} - {} elementinin görünür olması kontrol edilir' using 'class step.StepImplementation.checkVisibleElement"}
+( span[class='icon-door-open'] ) elementi sayfada goruntulendi
+{"logLevel":"debug","message":"Executing '{} - {} elementine tıklanır' using 'class step.StepImplementation.clickElement"}
+( span[class='icon-door-open'] ) elementine tiklandi
+{"logLevel":"debug","message":"Executing '{} - {} elementinin görünür olması kontrol edilir' using 'class step.StepImplementation.checkVisibleElement"}
+( //span[text()='GİRİŞ YAP'] ) elementi sayfada goruntulendi
+=========================================================================================================================================
+=========================================================================================================================================
+
+
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+{"logLevel":"debug","message":"Runner killed gracefully."}

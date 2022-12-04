@@ -1,0 +1,97 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+log4j:WARN No appenders could be found for logger (io.grpc.netty.shaded.io.netty.util.internal.CleanerJava6).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+SLF4J: A number (16) of logging calls during the initialization phase have been intercepted and are
+SLF4J: now being replayed. These are subject to the filtering rules of the underlying logging system.
+SLF4J: See also http://www.slf4j.org/codes.html#replay
+{"logLevel":"debug","message":"gauge-java took 2370milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 2370"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 54153"}
+{"logLevel":"info","message":"Listening on port:54153"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'step.StepImplementation.checkElementVisible' and 'step.StepImplementation.checkElementVisible'"}
+{"logLevel":"debug","message":"Found {} - {} elementinin görünür olmadığı kontrol edilir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'step.StepImplementation.clickElement' and 'step.StepImplementation.clickElement'"}
+{"logLevel":"debug","message":"Found {} - {} elementine tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'step.StepImplementation.checkVisibleElement' and 'step.StepImplementation.checkVisibleElement'"}
+{"logLevel":"debug","message":"Found {} - {} elementinin görünür olması kontrol edilir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'step.StepImplementation.scrollElement' and 'step.StepImplementation.scrollElement'"}
+{"logLevel":"debug","message":"Found {} - {} elementine scroll yapılır in current project scope."}
+{"logLevel":"debug","message":"Comparing 'step.StepImplementation.waitElement' and 'step.StepImplementation.waitElement'"}
+{"logLevel":"debug","message":"Found {} saniye bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'step.StepImplementation.whichElementClick' and 'step.StepImplementation.whichElementClick'"}
+{"logLevel":"debug","message":"Found {} - {} listedeki {}. ürünü seç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'step.StepImplementation.sendKeysElement' and 'step.StepImplementation.sendKeysElement'"}
+{"logLevel":"debug","message":"Found {} - {} elementine {} değerini yaz in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\t{} - {} elementine scroll yapılır : public void scrollElement(String key, String keyType) throws InterruptedException"}
+{"logLevel":"debug","message":"\t{} saniye bekle : public void waitElement(long seconds) throws InterruptedException"}
+{"logLevel":"debug","message":"\t{} - {} elementine tıkla : public void clickElement(String key, String keyType)"}
+{"logLevel":"debug","message":"\t{} - {} elementine {} değerini yaz : public void sendKeysElement(String key, String keyType, String text)"}
+{"logLevel":"debug","message":"\t{} - {} listedeki {}. ürünü seç : public void whichElementClick(String key, String keyType, ınt whichElement)"}
+{"logLevel":"debug","message":"\t{} - {} elementinin görünür olmadığı kontrol edilir : public void checkElementVisible(String key, String keyType)"}
+{"logLevel":"debug","message":"\t{} - {} elementinin görünür olması kontrol edilir : public void checkVisibleElement(String key, String keyType)"}
+Ara 03, 2022 11:51:29 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 36088
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Ara 03, 2022 11:51:30 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+{"logLevel":"debug","message":"Executing '{} - {} elementinin görünür olması kontrol edilir' using 'class step.StepImplementation.checkVisibleElement"}
+div[class='homepage-slider']element görüntülendi
+{"logLevel":"debug","message":"Executing '{} - {} elementine tıkla' using 'class step.StepImplementation.clickElement"}
+btnMyAccount -> Element görüntülendi.
+{"logLevel":"debug","message":"Executing '{} - {} elementine tıkla' using 'class step.StepImplementation.clickElement"}
+//a[text()='Giriş Yap'] -> Element görüntülendi.
+{"logLevel":"debug","message":"Executing '{} - {} elementine {} değerini yaz' using 'class step.StepImplementation.sendKeysElement"}
+email -> Element görüntülendi ta3320594@gmail.com değeri yazıldı.
+{"logLevel":"debug","message":"Executing '{} - {} elementine {} değerini yaz' using 'class step.StepImplementation.sendKeysElement"}
+pass -> Element görüntülendi tstccnt123 değeri yazıldı.
+{"logLevel":"debug","message":"Executing '{} - {} elementine tıkla' using 'class step.StepImplementation.clickElement"}
+button[id='login-button'] -> Element görüntülendi.
+{"logLevel":"debug","message":"Executing '{} - {} elementine {} değerini yaz' using 'class step.StepImplementation.sendKeysElement"}
+navbar-search-input -> Element görüntülendi Samsung değeri yazıldı.
+{"logLevel":"debug","message":"Executing '{} - {} elementinin görünür olması kontrol edilir' using 'class step.StepImplementation.checkVisibleElement"}
+span[class='icon-search']element görüntülendi
+{"logLevel":"debug","message":"Executing '{} - {} elementine tıkla' using 'class step.StepImplementation.clickElement"}
+span[class='icon-search'] -> Element görüntülendi.
+{"logLevel":"debug","message":"Executing '{} - {} elementinin görünür olması kontrol edilir' using 'class step.StepImplementation.checkVisibleElement"}
+//h3[contains(text(), 'SAMSUNG')]element görüntülendi
+{"logLevel":"debug","message":"Executing '{} - {} elementine scroll yapılır' using 'class step.StepImplementation.scrollElement"}
+[[ChromeDriver: chrome on WINDOWS (418af052357cd322fa444bd67741fdfc)] -> xpath: (//a[@class='pagination__content'])[2]] -> elementine scroll yapılır
+{"logLevel":"debug","message":"Executing '{} - {} elementinin görünür olması kontrol edilir' using 'class step.StepImplementation.checkVisibleElement"}
+(//a[@class='pagination__content'])[2]element görüntülendi
+{"logLevel":"debug","message":"Executing '{} - {} elementine tıkla' using 'class step.StepImplementation.clickElement"}
+(//a[@class='pagination__content'])[2] -> Element görüntülendi.
+{"logLevel":"debug","message":"Executing '{} - {} elementinin görünür olması kontrol edilir' using 'class step.StepImplementation.checkVisibleElement"}
+//li[@class='pagination__item active']//a[@class='pagination__content' and text()='2']element görüntülendi
+{"logLevel":"debug","message":"Executing '{} - {} listedeki {}. ürünü seç' using 'class step.StepImplementation.whichElementClick"}
+3. elemente tıklandı
+{"logLevel":"debug","message":"Executing '{} - {} elementinin görünür olması kontrol edilir' using 'class step.StepImplementation.checkVisibleElement"}
+fav_Iconelement görüntülendi
+{"logLevel":"debug","message":"Executing '{} - {} elementine tıkla' using 'class step.StepImplementation.clickElement"}
+fav_Icon -> Element görüntülendi.
+{"logLevel":"debug","message":"Executing '{} - {} elementinin görünür olması kontrol edilir' using 'class step.StepImplementation.checkVisibleElement"}
+div[class='fancy-modal-price-footer'] a[class='btn btn-default btn-modal pull-right']element görüntülendi
+{"logLevel":"debug","message":"Executing '{} - {} elementine tıkla' using 'class step.StepImplementation.clickElement"}
+div[class='fancy-modal-price-footer'] a[class='btn btn-default btn-modal pull-right'] -> Element görüntülendi.
+{"logLevel":"debug","message":"Executing '{} - {} elementinin görünür olması kontrol edilir' using 'class step.StepImplementation.checkVisibleElement"}
+div[class='basket-cart__table-row']element görüntülendi
+{"logLevel":"debug","message":"Executing '{} - {} elementinin görünür olması kontrol edilir' using 'class step.StepImplementation.checkVisibleElement"}
+a[class='basket-cart__product-remove'] ielement görüntülendi
+{"logLevel":"debug","message":"Executing '{} - {} elementine tıkla' using 'class step.StepImplementation.clickElement"}
+a[class='basket-cart__product-remove'] i -> Element görüntülendi.
+{"logLevel":"debug","message":"Executing '{} - {} elementinin görünür olmadığı kontrol edilir' using 'class step.StepImplementation.checkElementVisible"}
+div[class='basket-cart__table-row'] element görünür degil / 0 -> elementSize
+[1670057512.987][WARNING]: Timed out connecting to Chrome, retrying...
+[1670057521.077][WARNING]: Timed out connecting to Chrome, retrying...
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+{"logLevel":"debug","message":"Runner killed gracefully."}

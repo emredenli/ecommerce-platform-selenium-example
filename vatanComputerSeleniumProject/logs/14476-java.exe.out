@@ -1,0 +1,60 @@
+Listening for transport dt_socket at address: 55849
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+log4j:WARN No appenders could be found for logger (io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+SLF4J: A number (1) of logging calls during the initialization phase have been intercepted and are
+SLF4J: now being replayed. These are subject to the filtering rules of the underlying logging system.
+SLF4J: See also http://www.slf4j.org/codes.html#replay
+{"logLevel":"debug","message":"gauge-java took 1938milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 1938"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 55878"}
+{"logLevel":"info","message":"Listening on port:55878"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'step.StepImplementation.checkElementVisible' and 'step.StepImplementation.checkElementVisible'"}
+{"logLevel":"debug","message":"Found {} - {} elementinin görünür olmadığı kontrol edilir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'step.StepImplementation.clickElement' and 'step.StepImplementation.clickElement'"}
+{"logLevel":"debug","message":"Found {} - {} elementine tıklanır in current project scope."}
+{"logLevel":"debug","message":"Comparing 'step.StepImplementation.checkVisibleElement' and 'step.StepImplementation.checkVisibleElement'"}
+{"logLevel":"debug","message":"Found {} - {} elementinin görünür olması kontrol edilir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'step.StepImplementation.scrollElement' and 'step.StepImplementation.scrollElement'"}
+{"logLevel":"debug","message":"Found {} - {} elementine scroll yapılır in current project scope."}
+{"logLevel":"debug","message":"Comparing 'step.StepImplementation.waitElement' and 'step.StepImplementation.waitElement'"}
+{"logLevel":"debug","message":"Found {} saniye bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'step.StepImplementation.whichElementClick' and 'step.StepImplementation.whichElementClick'"}
+{"logLevel":"debug","message":"Found {} - {} listedeki {}. ürünü seç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'step.StepImplementation.sendKeysElement' and 'step.StepImplementation.sendKeysElement'"}
+{"logLevel":"debug","message":"Found {} - {} elementine {} değerini yaz in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\t{} - {} elementine scroll yapılır : public void scrollElement(String key, String keyType) throws InterruptedException"}
+{"logLevel":"debug","message":"\t{} saniye bekle : public void waitElement(long seconds) throws InterruptedException"}
+{"logLevel":"debug","message":"\t{} - {} elementine tıklanır : public void clickElement(String key, String keyType)"}
+{"logLevel":"debug","message":"\t{} - {} elementine {} değerini yaz : public void sendKeysElement(String key, String keyType, String text)"}
+{"logLevel":"debug","message":"\t{} - {} listedeki {}. ürünü seç : public void whichElementClick(String key, String keyType, ınt whichElement)"}
+{"logLevel":"debug","message":"\t{} - {} elementinin görünür olmadığı kontrol edilir : public void checkElementVisible(String key, String keyType)"}
+{"logLevel":"debug","message":"\t{} - {} elementinin görünür olması kontrol edilir : public void checkVisibleElement(String key, String keyType)"}
+=========================================================================================================================================
+----------------------------------------------VatanComputerAutomationTest-----------------------------------------------
+Ara 03, 2022 12:38:50 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 32745
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Ara 03, 2022 12:39:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+{"logLevel":"debug","message":"Executing '{} - {} elementinin görünür olması kontrol edilir' using 'class step.StepImplementation.checkVisibleElement"}
+div[class='homepage-slider']element görüntülendi
+{"logLevel":"debug","message":"Executing '{} - {} elementine tıklanır' using 'class step.StepImplementation.clickElement"}
+[1670060351.503][WARNING]: Timed out connecting to Chrome, retrying...
+[1670060359.604][WARNING]: Timed out connecting to Chrome, retrying...
+=========================================================================================================================================
+
+
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+{"logLevel":"debug","message":"Runner killed gracefully."}
