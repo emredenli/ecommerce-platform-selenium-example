@@ -24,7 +24,6 @@ public class Driver {
         System.out.println("------------------------------------------------------VatanComputerAutomationTest--------------------------------------------------------");
         System.out.println("=========================================================================================================================================");
 
-        //String url = "https://www.vatanbilgisayar.com/";
         DesiredCapabilities capabilities;
 
         if (StringUtils.isEmpty(System.getenv("key"))) {
