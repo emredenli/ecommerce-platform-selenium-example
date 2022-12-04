@@ -1,6 +1,7 @@
 package driver;
 
 import com.thoughtworks.gauge.*;
+import helpers.ProjectConsts;
 import org.apache.commons.lang.StringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -23,14 +24,14 @@ public class Driver {
         System.out.println("------------------------------------------------------VatanComputerAutomationTest--------------------------------------------------------");
         System.out.println("=========================================================================================================================================");
 
-        String url = "https://www.vatanbilgisayar.com/";
+        //String url = "https://www.vatanbilgisayar.com/";
         DesiredCapabilities capabilities;
 
         if (StringUtils.isEmpty(System.getenv("key"))) {
             capabilities = DesiredCapabilities.chrome();
             ChromeOptions options = new ChromeOptions();
             capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-            System.setProperty("webdriver.chrome.driver", "src/test/resources/driver/chrome/chromedriver.exe");
+            System.setProperty(ProjectConsts.WEBDRIVER_CHROME_DRIVER, ProjectConsts.WEBDRIVER_CHROME_DRIVER_PATH);
             webDriver = new ChromeDriver(capabilities);
         } else {
             capabilities = DesiredCapabilities.chrome();
@@ -40,7 +41,7 @@ public class Driver {
 
         webDriver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS).implicitlyWait(3, TimeUnit.SECONDS);
         webDriver.manage().window().maximize();
-        webDriver.get(url);
+        webDriver.get(ProjectConsts.PLATFORM_URL);
 
     }
 

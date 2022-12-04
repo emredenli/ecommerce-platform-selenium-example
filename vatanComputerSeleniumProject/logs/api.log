@@ -9836,3 +9836,6 @@
 04-12-2022 22:02:11.583 [Gauge] [DEBUG] Concept file added / modified: C:\Users\testinium\Desktop\project\vatanComputerSeleniumProject\specs\VatanComputer\VC\Feature\EpicVatanComputer.cpt
 04-12-2022 22:02:11.588 [Gauge] [DEBUG] Concept file added / modified: C:\Users\testinium\Desktop\project\vatanComputerSeleniumProject\specs\VatanComputer\VCLoginLogout\Feature\LoginLogout.cpt
 04-12-2022 22:02:11.590 [Gauge] [DEBUG] Spec file added / modified: C:\Users\testinium\Desktop\project\vatanComputerSeleniumProject\specs\VatanComputer\VC\EpicVatanComputer.spec
+04-12-2022 22:13:01.714 [Gauge] [DEBUG] Spec file added / modified: C:\Users\testinium\Desktop\project\vatanComputerSeleniumProject\specs\VatanComputer\VCLoginLogout\EpicLoginLogout.spec
+04-12-2022 22:23:47.441 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest  messageId:4  stepValueRequest:{stepText:" Vatan Computer <username> <password> Login"}
+04-12-2022 22:23:47.442 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse  messageId:4  stepValueResponse:{stepValue:{stepValue:"Vatan Computer {} {} Login"  parameterizedStepValue:"Vatan Computer <username> <password> Login"  parameters:"username"  parameters:"password"}}
